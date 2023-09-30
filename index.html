@@ -1,0 +1,60 @@
+<!--
+
+    Copyright (C) 2023  BRINIS Lydia
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+    
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="scene">
+        <h1 class="title">Click on the button to start !</h1>
+        <div class="choices">
+            <div class="playerChoices hide">
+                <div class="icon rock" onclick="compareResults(0)">
+                    <img id="rock" src="images/rock.png" alt="Rock">
+                </div> 
+                <div class="icon paper" onclick="compareResults(1)">
+                    <img id="paper" src="images/paper.png" alt="Paper">
+                </div> 
+                <div class="icon scissors" onclick="compareResults(2)">
+                    <img id="scissor" src="images/scissors.png" alt="Scissors">
+                </div>
+            </div>
+            <div class="computerChoices hide">
+                <div class="icon rock hide">
+                    <img id="rock" src="images/rock.png" alt="Rock">
+                </div> 
+                <div class="icon paper hide">
+                    <img id="paper" src="images/paper.png" alt="Paper">
+                </div> 
+                <div class="icon scissors hide">
+                    <img id="scissor" src="images/scissors.png" alt="Scissors">
+                </div>
+            </div>
+        </div>
+        <button id="play-btn" onclick="startGame()">Start Game !</button>
+    </div>
+</body>
+<footer>© GNU GENERAL PUBLIC LICENSE | <a href="https://github.com/BRINIS-Lydia">Code by BRINIS-Lydia</a><a href="https://www.flaticon.com/free-icons/rock" title="rock icons">Rock icons created by Agung Rama</a> | <a href="https://www.flaticon.com/free-icons/paper" title="paper icons">Paper icons created by Freepik</a> | <a href="https://www.flaticon.com/free-icons/scissors" title="scissors icons">Scissors icons created by Gulraiz</a> - Flaticon Icons</footer>
+</html>
