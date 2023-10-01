@@ -90,7 +90,7 @@ var compareResults = function(playerPick) {
          title[0].innerText = "IT'S A TIE !"
          title[0].classList.add("tie")
     } else {
-        if (((plrPick == 0) && (cmpPick == 1))|| ((plrPick == 2) && (cmpPick == 0)) || ((plrPick == 2) && (cmpPick == 0))) {
+        if (((plrPick == 0) && (cmpPick == 1))|| ((plrPick == 2) && (cmpPick == 0)) || ((plrPick == 1) && (cmpPick == 2))) {
             title[0].innerText = "YOU LOST !"
             title[0].classList.add("loss")
         }else {
